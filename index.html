@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Felipe de Moraes Gomes portifólio - Desenvolvedor Front-End, Web Developer, Python, Segurança da Informação. Projetos, tecnologias e contato.">
+    <meta name="description" content="Felipe de Moraes Gomes - Desenvolvedor Front-End, Web Developer e Segurança da Informação (AppSec). Projetos, tecnologias, certificações e contato.">
+    <meta name="author" content="Felipe de Moraes Gomes">
+
+    <!-- Open Graph / compartilhamento em redes sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Felipe de Moraes Gomes | Dev & AppSec">
+    <meta property="og:description" content="Desenvolvedor Front-End e Web Developer com especialização em Segurança da Informação (AppSec). Veja projetos, stack e certificações.">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Favicon (monograma FMG em SVG, sem depender de arquivo externo) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0f'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-weight='800' font-size='24' fill='%230ee8f4' text-anchor='middle'%3EFMG%3C/text%3E%3C/svg%3E">
+
+    <!-- Fontes usadas no design (Syne + DM Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <title>Felipe de Moraes Gomes</title>
+    <title>Felipe de Moraes Gomes | Dev & AppSec</title>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Felipe de Moraes Gomes",
+        "jobTitle": "Front-End Developer & AppSec",
+        "url": "https://github.com/FelipeGomes29",
+        "sameAs": [
+            "https://www.linkedin.com/in/felipe-de-moraes-gomes-4b050925b/",
+            "https://github.com/FelipeGomes29"
+        ],
+        "knowsAbout": ["JavaScript", "React", "Python", "Segurança da Informação", "OWASP", "AppSec"]
+    }
+    </script>
 </head>
 <body>
 
     <nav>
         <a href="#" class="logo">FMG</a>
-        <ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul id="navMenu">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#certificacoes">Certificações</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
@@ -36,6 +71,7 @@
         <div class="hero-cta">
             <a href="#projetos" class="btn btn-primary">Ver projetos →</a>
             <a href="#contato" class="btn btn-ghost">Entre em contato</a>
+            <a href="cv-felipe-gomes.pdf" class="btn btn-ghost" download>Baixar CV ↓</a>
         </div>
     </header>
 
@@ -113,44 +149,6 @@
                 </div>
                 <span class="project-link">Ver projeto →</span>
             </a>
-
-            <a href="https://felipegomes29.github.io/landing-page-de-pizzaria/" class="project-card">
-                <div class="project-icon">🍕</div>
-                <h3>Landing Page de Pizzaria</h3>
-                <p>Este projeto é uma landing page para uma pizzaria, com design responsivo e funcionalidades de contato.</p>
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>DOM</span>
-                    <span>CSS</span>
-                </div>
-               <span class="project-link">Ver projeto →</span>
-            </a>
-
-            <a href="#" class="project-card">
-                <div class="project-icon">⚙️</div>
-                <h3>Draft de jogadores do Brasileirão</h3>
-                <p>Uma aplicação onde 1 a 7 jogadores entram em uma sala e fazem um draft de jogadores do Brasileirão, escolhendo um por vez até formar seus times.</p>
-                <div class="project-tags">
-                    <span>React</span>
-                    <span>Node.Js</span>
-                    <span>Socket.IO</span>
-                </div>
-                <span class="project-link">Em breve →</span>
-            </a>
-            <a href="#" class="project-card">
-                <div class="project-icon">⚙️</div>
-                <h3>Sistema de Controle Financeiro</h3>
-                <p>Uma aplicação para gerenciar receitas e despesas, com relatórios e análises financeiras.</p>
-                <div class="project-tags">
-                    <span>React</span>
-                    <span>Node.Js</span>
-                    <span>PostgreSQL</span>
-                </div>
-                <span class="project-link">Em breve →</span>
-            </a>
-
-
-
         </div>
     </section>
     <section id="tecnologias">
@@ -187,16 +185,65 @@
                 </ul>
             </div>
             <div class="tech-group">
-                <h4>Segurança & Redes</h4>
+                <h4>AppSec & Redes</h4>
                 <ul>
-                    <li>Segurança da Informação</li>
+                    <li>OWASP Top 10</li>
+                    <li>Burp Suite</li>
+                    <li>Kali Linux</li>
                     <li>Redes TCP/IP</li>
-                    <li>Suporte técnico</li>
-                    <li>Cloud Computing</li>
+                    <li>Análise de vulnerabilidades</li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <div class="divider"></div>
+
+    <section id="certificacoes">
+        <div class="section-label">// Certificações</div>
+        <h2>Formação contínua</h2>
+        <div class="certs-grid">
+            <div class="cert-card">
+                <span class="cert-badge">Google</span>
+                <h3>Google Cybersecurity Certificate</h3>
+                <p>Fundamentos de segurança da informação, gestão de riscos e resposta a incidentes.</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-badge">Google</span>
+                <h3>Google Data Analytics Certificate</h3>
+                <p>Análise de dados, limpeza e visualização com foco em tomada de decisão.</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-badge">AWS</span>
+                <h3>AWS Cloud Practitioner</h3>
+                <p>Fundamentos de computação em nuvem, serviços e boas práticas de arquitetura AWS.</p>
+            </div>
+            <div class="cert-card">
+                <span class="cert-badge">Cisco</span>
+                <h3>Cisco Networking / Cybersecurity</h3>
+                <p>Fundamentos de redes, protocolos TCP/IP e segurança de infraestrutura.</p>
+            </div>
+        </div>
+        <div class="cert-roadmap">
+            <span class="roadmap-label">Roadmap de certificações ofensivas</span>
+            <div class="roadmap-track">
+                <div class="roadmap-step is-active">
+                    <span class="roadmap-dot"></span>
+                    <span>eJPT</span>
+                </div>
+                <div class="roadmap-step">
+                    <span class="roadmap-dot"></span>
+                    <span>eWPT</span>
+                </div>
+                <div class="roadmap-step">
+                    <span class="roadmap-dot"></span>
+                    <span>OSCP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
 
     <section id="servicos">
         <div class="section-label">// Serviços</div>
@@ -228,7 +275,7 @@
                 </ul>
             </div>
 
-            <div div class="service-card">
+            <div class="service-card">
                 <span class="service-icon">🤖</span>
                 <h3>Automação com Python</h3>
                 <p>Scripts que eliminam tarefas manuais, integram sistemas e executam processos com precisão e velocidade.</p>
@@ -241,14 +288,14 @@
             </div>
 
             <div class="service-card">
-                <span class="service-icon">🚀</span>
-                <h3>Projetos Full Stack</h3>
-                <p>Desenvolvimento completo de aplicações, do front ao back, prontas para produção.</p>
+                <span class="service-icon">🛡️</span>
+                <h3>Análise de Segurança (AppSec)</h3>
+                <p>Avaliação de vulnerabilidades em aplicações web seguindo boas práticas do mercado.</p>
                 <ul class="service-list">
-                    <li>Arquitetura de sistemas</li>
-                    <li>Deploy e hospedagem</li>
-                    <li>Integração front + back</li>
-                    <li>Boas práticas e performance</li>
+                    <li>OWASP Top 10</li>
+                    <li>Testes com Burp Suite</li>
+                    <li>Hardening de infraestrutura</li>
+                    <li>Boas práticas de segurança no código</li>
                 </ul>
             </div>
 
@@ -257,7 +304,6 @@
 
     <div class="divider"></div>
 
-    <div class="divider"></div>    
     <section id="contato">
         <div class="section-label">// Contato</div>
         <h2>Vamos conversar</h2>
@@ -265,7 +311,7 @@
 
             <a href="https://www.linkedin.com/in/felipe-de-moraes-gomes-4b050925b/" target="_blank" rel="noopener" class="contact-card">
                 <div class="contact-info">
-                    <img src="img/icons8-linkedin-64.png">
+                    <img src="img/icons8-linkedin-64.png" alt="LinkedIn" width="24" height="24">
                     <span>LinkedIn</span>
                     <strong>Felipe de Moraes Gomes</strong>
                 </div>
@@ -273,7 +319,7 @@
 
             <a href="https://github.com/FelipeGomes29" target="_blank" rel="noopener" class="contact-card">
                 <div class="contact-info">
-                    <img src="img/icons8-github-64.png">
+                    <img src="img/icons8-github-64.png" alt="GitHub" width="24" height="24">
                     <span>GitHub</span>
                     <strong>FelipeGomes29</strong>
                 </div>
@@ -281,15 +327,16 @@
 
             <a href="mailto:fegomesmoraes2908@gmail.com" class="contact-card">
                 <div class="contact-info">
-                    <img src="img/icons8-email-64.png">
+                    <img src="img/icons8-email-64.png" alt="Email" width="24" height="24">
                     <span>Email</span>
                     <strong>fegomesmoraes2908@gmail.com</strong>
                 </div>
             </a>
 
         </div>
-    </section>    
+    </section>
     <footer><p>&copy; 2026 Felipe de Moraes Gomes. Todos os direitos reservados.</p></footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
