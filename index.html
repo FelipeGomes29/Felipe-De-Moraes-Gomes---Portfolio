@@ -6,16 +6,13 @@
     <meta name="description" content="Felipe de Moraes Gomes - Desenvolvedor Front-End, Web Developer e Segurança da Informação (AppSec). Projetos, tecnologias, certificações e contato.">
     <meta name="author" content="Felipe de Moraes Gomes">
 
-    <!-- Open Graph / compartilhamento em redes sociais -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Felipe de Moraes Gomes | Dev & AppSec">
     <meta property="og:description" content="Desenvolvedor Front-End e Web Developer com especialização em Segurança da Informação (AppSec). Veja projetos, stack e certificações.">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- Favicon (monograma FMG em SVG, sem depender de arquivo externo) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0f'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-weight='800' font-size='24' fill='%230ee8f4' text-anchor='middle'%3EFMG%3C/text%3E%3C/svg%3E">
 
-    <!-- Fontes usadas no design (Syne + DM Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -59,7 +56,6 @@
         <div class="hero-tag">Disponível para oportunidades</div>
         <h1>Felipe de<br><span>Moraes</span> Gomes</h1>
         <div class="hero-roles">
-            <span>Front-End Developer</span>
             <span>Web Developer</span>
             <span>Python</span>
             <span>Segurança da Informação</span>
@@ -71,7 +67,7 @@
         <div class="hero-cta">
             <a href="#projetos" class="btn btn-primary">Ver projetos →</a>
             <a href="#contato" class="btn btn-ghost">Entre em contato</a>
-            <a href="cv-felipe-gomes.pdf" class="btn btn-ghost" download>Baixar CV ↓</a>
+            <a href="curriculo_Felipe-Gomes.pdf" class="btn btn-ghost" download>Baixar CV ↓</a>
         </div>
     </header>
 
@@ -113,6 +109,27 @@
             <h2>O que eu construí</h2>
             <div class="projects-grid">
 
+            <a href="https://github.com/FelipeGomes29/Agenda-24-horas" target="_blank" rel="noopener" class="project-card project-card--featured">
+                <span class="project-badge">Destaque</span>
+                <div class="project-icon">🗓️</div>
+                <h3>Planner 24h</h3>
+                <p>Ferramenta de produtividade full stack que mostra o dia inteiro, não só o horário comercial: grade semanal de 24h com arrastar e soltar, detecção de conflito entre tarefas e uma caixa de entrada para o que ainda não tem data.</p>
+                <ul class="project-highlights">
+                    <li>Sessão em cookies httpOnly com rotação de refresh token</li>
+                    <li>Proteção contra CSRF e isolamento entre contas em todas as rotas</li>
+                    <li>Validação com Zod, consultas parametrizadas, helmet e rate limit</li>
+                    <li>30 testes de integração rodando contra banco real</li>
+                </ul>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>PostgreSQL</span>
+                    <span>Tailwind</span>
+                    <span>AppSec</span>
+                </div>
+                <span class="project-link">Ver no GitHub →</span>
+            </a>
+
             <a href="https://beautiful-profiterole-46320d.netlify.app/" target="_blank" rel="noopener" class="project-card">
                 <div class="project-icon">🎬</div>
                 <h3>Botflix</h3>
@@ -126,7 +143,7 @@
                 <span class="project-link">Ver projeto →</span>
             </a>
 
-            <a href="https://github.com/FelipeGomes29/Agenda-python-v3.0" class="project-card">
+            <a href="https://github.com/FelipeGomes29/Agenda-python-v3.0" target="_blank" rel="noopener" class="project-card">
                 <div class="project-icon">📇</div>
                 <h3>Agenda de Contatos</h3>
                 <p>Aplicação de agenda de contatos desenvolvida em Python com funcionalidades de CRUD e persistência de dados.</p>
@@ -138,7 +155,7 @@
                 <span class="project-link">Ver Projeto →</span>
             </a>
 
-            <a href="https://github.com/FelipeGomes29/App_Clima" class="project-card">
+            <a href="https://github.com/FelipeGomes29/App_Clima" target="_blank" rel="noopener" class="project-card">
                 <div class="project-icon">🌤️</div>
                 <h3>App Clima</h3>
                 <p>Um aplicativo de previsão do tempo desenvolvido com React e Node.js.</p>
@@ -224,24 +241,7 @@
                 <p>Fundamentos de redes, protocolos TCP/IP e segurança de infraestrutura.</p>
             </div>
         </div>
-        <div class="cert-roadmap">
-            <span class="roadmap-label">Roadmap de certificações ofensivas</span>
-            <div class="roadmap-track">
-                <div class="roadmap-step is-active">
-                    <span class="roadmap-dot"></span>
-                    <span>eJPT</span>
-                </div>
-                <div class="roadmap-step">
-                    <span class="roadmap-dot"></span>
-                    <span>eWPT</span>
-                </div>
-                <div class="roadmap-step">
-                    <span class="roadmap-dot"></span>
-                    <span>OSCP</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    </melhora esection>
 
     <div class="divider"></div>
 
